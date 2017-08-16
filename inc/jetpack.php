@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package pegster_apple
+ * @package pegster-apple
  */
 
 /**
@@ -14,11 +14,11 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function pegster_apple_jetpack_setup() {
+function pegster-apple_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'main',
-		'render'    => 'pegster_apple_infinite_scroll_render',
+		'render'    => 'pegster-apple_infinite_scroll_render',
 		'footer'    => 'page',
 	) );
 
@@ -28,7 +28,7 @@ function pegster_apple_jetpack_setup() {
 	// Add theme support for Content Options.
 	add_theme_support( 'jetpack-content-options', array(
 		'post-details' => array(
-			'stylesheet' => 'pegster_apple-style',
+			'stylesheet' => 'pegster-apple-style',
 			'date'       => '.posted-on',
 			'categories' => '.cat-links',
 			'tags'       => '.tags-links',
@@ -37,12 +37,12 @@ function pegster_apple_jetpack_setup() {
 		),
 	) );
 }
-add_action( 'after_setup_theme', 'pegster_apple_jetpack_setup' );
+add_action( 'after_setup_theme', 'pegster-apple_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  */
-function pegster_apple_infinite_scroll_render() {
+function pegster-apple_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
 		if ( is_search() ) :

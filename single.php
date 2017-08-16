@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package pegster_apple
+ * @package pegster-apple
  */
 
 get_header(); ?>

@@ -8,33 +8,33 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package pegster_apple
+ * @package pegster-apple
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses pegster_apple_header_style()
+ * @uses pegster-apple_header_style()
  */
-function pegster_apple_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'pegster_apple_custom_header_args', array(
+function pegster-apple_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'pegster-apple_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'pegster_apple_header_style',
+		'wp-head-callback'       => 'pegster-apple_header_style',
 	) ) );
 }
-add_action( 'after_setup_theme', 'pegster_apple_custom_header_setup' );
+add_action( 'after_setup_theme', 'pegster-apple_custom_header_setup' );
 
-if ( ! function_exists( 'pegster_apple_header_style' ) ) :
+if ( ! function_exists( 'pegster-apple_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see pegster_apple_custom_header_setup().
+	 * @see pegster-apple_custom_header_setup().
 	 */
-	function pegster_apple_header_style() {
+	function pegster-apple_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*

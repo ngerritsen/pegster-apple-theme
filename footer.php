@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package pegster_apple
+ * @package pegster-apple
  */
 
 ?>
@@ -15,14 +15,14 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'pegster_apple' ) ); ?>"><?php
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'pegster-apple' ) ); ?>"><?php
 				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'pegster_apple' ), 'WordPress' );
+				printf( esc_html__( 'Proudly powered by %s', 'pegster-apple' ), 'WordPress' );
 			?></a>
 			<span class="sep"> | </span>
 			<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'pegster_apple' ), 'pegster_apple', '<a href="http://underscores.me/">Underscores.me</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'pegster-apple' ), 'pegster-apple', '<a href="http://underscores.me/">Underscores.me</a>' );
 			?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
