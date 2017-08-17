@@ -1,2 +1,0 @@
-mysql -h 127.0.0.1 -u root -pdevelopment -e 'CREATE DATABASE IF NOT EXISTS wordpress;'
-echo 'Done!'

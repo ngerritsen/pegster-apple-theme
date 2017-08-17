@@ -1,16 +1,18 @@
 version: '2'
 services:
-  pegster-apple-theme-mysql:
+  pegster_apple-theme-mysql:
+    container_name: pegster_apple-theme-mysql
     image: mysql:5.7
     ports:
       - 3306:3306
     environment:
       - MYSQL_ROOT_PASSWORD=development
-  pegster-apple-theme-wordpress:
-    image: wordpress:latest
+  pegster_apple-theme-wordpress:
+    container_name: pegster_apple-theme-wordpress
+    build: ./docker/wordpress
     ports:
       - 8080:80
     links:
-      - pegster-apple-theme-mysql:mysql
+      - pegster_apple-theme-mysql:mysql
     volumes:
-      - .:/usr/src/wordpress/wp-content/themes/pegster-apple-theme
+      - .:/var/www/html/wp-content/themes/pegster_apple-theme/

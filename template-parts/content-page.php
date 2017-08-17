@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package pegster-apple
+ * @package pegster_apple
  */
 
 ?>
@@ -19,7 +19,7 @@
 			the_content();
 
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'pegster-apple' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'pegster_apple' ),
 				'after'  => '</div>',
 			) );
 		?>
@@ -32,7 +32,7 @@
 					sprintf(
 						wp_kses(
 							/* translators: %s: Name of current post. Only visible to screen readers */
-							__( 'Edit <span class="screen-reader-text">%s</span>', 'pegster-apple' ),
+							__( 'Edit <span class="screen-reader-text">%s</span>', 'pegster_apple' ),
 							array(
 								'span' => array(
 									'class' => array(),

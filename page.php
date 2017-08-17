@@ -9,7 +9,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package pegster-apple
+ * @package pegster_apple
  */
 
 get_header(); ?>

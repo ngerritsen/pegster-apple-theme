@@ -1,0 +1,21 @@
+{
+  "name": "pegster-apple-theme",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)",
+  "main": "index.js",
+  "scripts": {
+    "reset": "docker-compose down; docker-compose up -d --build",
+    "provision": "mysql -h 127.0.0.1 -u root -pdevelopment < wordpress-data.sql",
+    "dump": "mysqldump -h 127.0.0.1 -u root -pdevelopment --databases wordpress > wordpress-data.sql"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngerritsen/pegster-apple-theme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngerritsen/pegster-apple-theme/issues"
+  },
+  "homepage": "https://github.com/ngerritsen/pegster-apple-theme#readme"
+}
