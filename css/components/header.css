@@ -1,0 +1,24 @@
+:root {
+  --header-height: 26rem;
+  --logo-height: 9rem;
+}
+
+.header {
+  height: var(--header-height);
+  padding: calc(var(--header-height) - (var(--logo-height) * 2)) 0;
+}
+
+.header__title {
+  margin: 0;
+  text-align: center;
+}
+
+.header__title > a {
+  display: inline-block;
+  text-indent: -9999px;
+  background: url('/wp-content/themes/pegster_apple-theme/img/logo.svg') no-repeat center;
+  background-size: contain;
+
+  width: 22rem;
+  height: var(--logo-height);
+}

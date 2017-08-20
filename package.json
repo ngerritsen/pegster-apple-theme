@@ -6,7 +6,8 @@
   "scripts": {
     "reset": "docker-compose down; docker-compose up -d --build",
     "provision": "mysql -h 127.0.0.1 -u root -pdevelopment < wordpress-data.sql",
-    "dump": "mysqldump -h 127.0.0.1 -u root -pdevelopment --databases wordpress > wordpress-data.sql"
+    "dump": "mysqldump -h 127.0.0.1 -u root -pdevelopment --databases wordpress > wordpress-data.sql",
+    "css": "postcss css/main.css -c postcss.config.js -o style.css --watch"
   },
   "repository": {
     "type": "git",
@@ -17,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/ngerritsen/pegster-apple-theme/issues"
   },
-  "homepage": "https://github.com/ngerritsen/pegster-apple-theme#readme"
+  "homepage": "https://github.com/ngerritsen/pegster-apple-theme#readme",
+  "devDependencies": {
+    "postcss": "^6.0.9",
+    "postcss-cli": "^4.1.0",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^10.0.0"
+  }
 }
